@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0%;
+    background-color: #F5EDDC;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;   
+}
+
+.board{
+    width: 60%;
+    height: 80vh;
+    background-color: lightsalmon;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    
+}
+.draw{
+    margin: 4vh auto 4vh auto;
+    width: 46.5%;
+    height: 72vh;
+    border-radius: 10px;
+}
+.left{
+    background-color: #A2B5BB;
+}
