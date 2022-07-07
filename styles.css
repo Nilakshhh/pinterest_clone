@@ -86,4 +86,8 @@ div.item {
     background-color: black;
     color: azure;
     padding: 5px 10px;
+    font-size: 10px;
+}
+.arrow{
+    font-size: 12px;
 }
