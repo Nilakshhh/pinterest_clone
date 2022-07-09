@@ -6,11 +6,6 @@ document.querySelector("#create").addEventListener('click', () => {
   element.classList.remove("hidden");
   var element = document.getElementById("pin_container");
   element.classList.add("hidden");
-
-
-
-
-
 });
 
 
