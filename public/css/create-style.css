@@ -109,13 +109,7 @@ h1{
     max-height: 80%;
   }
   
-  .pin_image {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   #right_side .section1 .select_size .save_pin{
     width: 30%;
     height: 100%;
@@ -143,30 +137,49 @@ h1{
     background-color: transparent;
   }
 
-  .head-pin{
+  .headPin{
     position: absolute;
-    top: 5%;
     left: 5%;
-  }
-  .foot-pin{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-  }
-  .head-pin .pin-title{
-    background-color: red;
-    padding: 5px;
-    border-radius: 2px;
-  }
-  .foot-pin .pin-link{
-    background-color: red;
-    padding: 5px;
-    border-radius: 2px;
-  }
-  .model{
+    top: 0;
     opacity: 0;
   }
-    .card:hover ~ .model{
+  .footPin{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    opacity: 0;
+  }
+  .pin-title{
+    background-color: red;
+    padding: 8px;
+    border-radius: 6px;
+    color: aliceblue;
+  }
+  .pin-link{
+    background-color: red;
+    padding: 8px;
+    border-radius: 6px;
+    color: aliceblue;
+  }
+  .headPin:hover{
     opacity: 1;
-  
+  }
+  .footPin:hover{
+    opacity: 1;
+  }
+  .pin_image:hover ~ .headPin{
+    opacity: 1;
+
+  } 
+  .pin_image:hover ~ .footPin{
+    opacity: 1;
+
+  }
+  .pin_image {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

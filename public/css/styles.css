@@ -2,9 +2,9 @@
     --column_width: 240px;
     --row_height: 10px;
     --card_border_radius: 15px;
-    --card_small: 20;
-    --card_medium: 30;
-    --card_large: 40;
+    --card_small: 30;
+    --card_medium: 40;
+    --card_large: 50;
 }
 body{
     background-color: white;
@@ -26,10 +26,11 @@ body{
     justify-content: center;
 }
 .card{
-    background-color: whit;
+    background-color: lightsalmon;
     padding: 0px;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
+    justify-content: center;
 }
 .card-small{
     grid-row-end: span var(--card_small);
