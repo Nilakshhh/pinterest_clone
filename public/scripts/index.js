@@ -44,11 +44,45 @@ document.querySelector(".save_pin").addEventListener('click', () => {
   var element = document.getElementById("pin_container");
   element.classList.remove("hidden");
   
+  const pinData ={
+    author: "Nilaksh",
+    title: document.querySelector('#pin_title').value,
+    description: document.querySelector('#pin_description').value,
+    destination: document.querySelector('#pin_destination').value,
+    pinSize: document.querySelector('#pin_size').value,
+    img_blob: imgBlob
+  }
+  pinCreate(pinData);
   reset();
 });
 
 
+function pinCreate(data){
+  const new_pin = document.createElement("div");
+  const img = new Image();
+  img.src = data.img_blob;
+  img.onload = () => {
+    new_pin.classList.add('card');
+    new_pin.classList.add(`card-${data.pinSize}`);
+    img.classList.add('pin_width');
 
+    new_pin.innerHTML = `
+    <div class="head-pin"><div class="pin-title">${data.title}</div></div>
+    <div class="foot-pin">
+    <div class="pin-link">${data.destination}</div>
+    </div>
+    <div class="pin_image"></div>
+    `;
+
+
+
+
+
+    document.querySelector('.pin_container').appendChild(new_pin);
+    new_pin.children[2].appendChild(img);
+  }
+
+}
 
 
 function reset(){

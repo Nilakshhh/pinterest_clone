@@ -26,7 +26,7 @@ body{
     justify-content: center;
 }
 .card{
-    background-color: grey;
+    background-color: whit;
     padding: 0px;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);

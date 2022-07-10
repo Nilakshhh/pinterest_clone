@@ -105,9 +105,9 @@ h1{
     background-color: #EFEFEF;
   }
   .pin_width{
-    max-width: 100%;
+    max-width: 90%;
+    max-height: 80%;
   }
-  
   
   .pin_image {
     width: 100%;
@@ -141,4 +141,20 @@ h1{
     font-size: 16px;
     font-weight: 550;
     background-color: transparent;
+  }
+
+  .pin-title{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  .pin-description{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+  .pin-link{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
   }
