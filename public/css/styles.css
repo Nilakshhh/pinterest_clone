@@ -28,7 +28,7 @@ body{
 .card{
     background-color: lightsalmon;
     padding: 0px;
-    margin: 15px 10px;
+    margin: 5px 5px;
     border-radius: var(--card_border_radius);
     justify-content: center;
 }

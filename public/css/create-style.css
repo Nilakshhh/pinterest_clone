@@ -105,8 +105,8 @@ h1{
     background-color: #EFEFEF;
   }
   .pin_width{
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 95%;
+    max-height: 95%;
   }
   
   
@@ -140,13 +140,13 @@ h1{
   .headPin{
     position: absolute;
     left: 5%;
-    top: 0;
+    top: 5%;
     opacity: 0;
   }
   .footPin{
     position: absolute;
     left: 5%;
-    bottom: 0;
+    bottom: 5%;
     opacity: 0;
   }
   .pin-title{
