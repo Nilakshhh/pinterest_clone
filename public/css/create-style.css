@@ -143,18 +143,30 @@ h1{
     background-color: transparent;
   }
 
-  .pin-title{
+  .head-pin{
     position: absolute;
     top: 5%;
     left: 5%;
   }
-  .pin-description{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-  }
-  .pin-link{
+  .foot-pin{
     position: absolute;
     bottom: 5%;
     left: 5%;
+  }
+  .head-pin .pin-title{
+    background-color: red;
+    padding: 5px;
+    border-radius: 2px;
+  }
+  .foot-pin .pin-link{
+    background-color: red;
+    padding: 5px;
+    border-radius: 2px;
+  }
+  .model{
+    opacity: 0;
+  }
+    .card:hover ~ .model{
+    opacity: 1;
+  
   }

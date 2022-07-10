@@ -67,9 +67,12 @@ function pinCreate(data){
     img.classList.add('pin_width');
 
     new_pin.innerHTML = `
-    <div class="head-pin"><div class="pin-title">${data.title}</div></div>
-    <div class="foot-pin">
-    <div class="pin-link">${data.destination}</div>
+    
+    <div class="model">
+      <div class="head-pin"><div class="pin-title">${data.title}</div></div>
+      <div class="foot-pin">
+          <div class="pin-link">${data.destination}</div>
+      </div>
     </div>
     <div class="pin_image"></div>
     `;
@@ -79,7 +82,7 @@ function pinCreate(data){
 
 
     document.querySelector('.pin_container').appendChild(new_pin);
-    new_pin.children[2].appendChild(img);
+    new_pin.children[1].appendChild(img);
   }
 
 }
