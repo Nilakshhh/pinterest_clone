@@ -16,12 +16,10 @@ document.querySelector("#upload_image").addEventListener('change', event => {
     if (/image\/*/.test(event.target.files[0].type)){
       const reader = new FileReader();
       reader.onload = () => {
-        console.log("loaded");
         const img = new Image();
         img.src = reader.result;
         imgBlob = reader.result;
         img.onload = () => {
-          console.log("doi");
           img.classList.add("pin_width");
           document.querySelector('.add_pin .pin_image').appendChild(img);
           document.querySelector('#upload_image_label').style.display = 'none';
@@ -33,8 +31,6 @@ document.querySelector("#upload_image").addEventListener('change', event => {
   }
 document.querySelector("#upload_image").value = '';
 })
-
-
 
 
 
