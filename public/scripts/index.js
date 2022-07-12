@@ -3,11 +3,9 @@ const work = document.querySelector(".add_pin");
 
 
 document.querySelector("#create").addEventListener('click', () => {
-    var element = document.getElementById("add_pin_container");
-  element.classList.remove("hidden");
+    work.classList.remove("hidden");
   work.style.pointerEvents = 'all'; 
-  var element = document.getElementById("pin_container");
-  element.classList.add("hidden");
+  document.getElementById("pin_container").classList.add("hidden");
 });
 
 
